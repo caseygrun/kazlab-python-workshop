@@ -10,5 +10,5 @@ dependencies:
     - jupyter
     - xlrd
     - pip:
-        - "--editable git+https://github.com/caseygrun/plates.git#egg=plates"
-        - "--editable git+https://github.com/mwaskom/seaborn.git#egg=seaborn"
+        - "-e git+https://github.com/caseygrun/plates.git#egg=plates"
+        - "-e git+https://github.com/mwaskom/seaborn.git#egg=seaborn"
