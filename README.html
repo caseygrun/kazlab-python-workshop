@@ -1,0 +1,79 @@
+<p>Please follow these instructions to install Python and the required dependencies.</p>
+<h2 id="if-you-already-have-a-python-installation-that-you-would-like-to-keep">If you ALREADY HAVE a Python installation that you would like to keep:</h2>
+<h3 id="macos">macOS:</h3>
+<ul>
+<li>You will create a &quot;Virtual Environment&quot; to work for this workshop. This will keep the Python packages you install today separate from your global Python packages or other environments you may want to use</li>
+</ul>
+<ol style="list-style-type: decimal">
+<li><p>Open a Terminal. Change to the directory where you're reading this file. For example, if you downloaded to <code>~/Downloads/2018-05-25_Python_workshop</code>, enter:</p>
+<pre><code>cd ~/Downloads/2018-05-25_Python_workshop</code></pre></li>
+<li><p>Create a virtual environment:</p>
+<pre><code>python3 -m venv kaz_lab_workshop</code></pre></li>
+<li><p>&quot;Activate&quot; the virtual environment:</p>
+<pre><code>source kaz_lab_workshop/bin/activate</code></pre>
+<p>The terminal prompt should now start with <code>(kaz_lab_workshop)</code>, to remind you that you're in the virtual environment.</p></li>
+<li><p>Install dependencies:</p>
+<pre><code>pip install -r requirements.txt</code></pre></li>
+<li><p>Start the notebook</p>
+<pre><code>jupyter notebook</code></pre></li>
+</ol>
+<p>In the future, each time you want to start the notebook:</p>
+<ol style="list-style-type: decimal">
+<li>Open a Terminal; change to this directory</li>
+<li>Run <code>activate kaz_lab_workshop</code></li>
+<li>Run <code>jupyter notebook</code> to start the notebook</li>
+</ol>
+<h2 id="if-you-do-not-have-python">If you DO NOT HAVE Python</h2>
+<h3 id="macos-1">macOS:</h3>
+<ol start="0" style="list-style-type: decimal">
+<li><p>Make sure you do not have <code>conda</code> installed already. Open a Terminal and type</p>
+<pre><code>conda --version</code></pre>
+<p>If you get <code>-bash: conda: command not found</code>, proceed. If you get <code>conda 4.5.1</code> or something similar, run</p>
+<pre><code>conda update conda</code></pre>
+<p>then skip to step 2.</p></li>
+<li><p>Install miniconda:</p>
+<ul>
+<li>Go to <a href="https://conda.io/miniconda.html" class="uri">https://conda.io/miniconda.html</a> and download the <strong>Python 3.6</strong> 64-bit (bash installer) under Mac OS X</li>
+<li><p>Open a Terminal, and change to the directory where you downloaded the installer (usually <code>~/Downloads</code>)</p>
+<pre><code>cd ~/Downloads </code></pre></li>
+<li><p>Run the installer:</p>
+<pre><code>sh Miniconda3-latest-MacOSX-x86_64.sh</code></pre></li>
+<li><p>Agree to the license, agree to install miniconda, and once it's installed, agree to add conda to your PATH</p></li>
+</ul></li>
+<li><p>Create an environment and install dependencies:</p>
+<pre><code>conda env create -f ./environment.yml </code></pre></li>
+<li><p>Activate the environment</p>
+<pre><code>conda activate kaz_lab_workshop</code></pre>
+<p>The terminal prompt should now start with <code>(kaz_lab_workshop)</code>, to remind you that you're in the virtual environment.</p></li>
+<li><p>Start the notebook</p>
+<pre><code>jupyter notebook</code></pre></li>
+</ol>
+<p>In the future, each time you want to start the notebook:</p>
+<ol style="list-style-type: decimal">
+<li>Open a Terminal; change to this directory</li>
+<li>Run <code>conda activate kaz_lab_workshop</code></li>
+<li>Run <code>jupyter notebook</code> to start the notebook</li>
+</ol>
+<h3 id="windows">Windows:</h3>
+<ol style="list-style-type: decimal">
+<li><p>Install Miniconda</p>
+<ul>
+<li>Go to <a href="https://conda.io/miniconda.html" class="uri">https://conda.io/miniconda.html</a>. Download the Python <strong>3.6</strong> 64-bit (exe installer) under &quot;Windows&quot;</li>
+<li>Run the installer program, agree to the license terms, and install. Leave the default options checked with respect to changing your PATH.</li>
+</ul></li>
+<li>Open an Anaconda prompt from Start menu: click the Windows icon and start type &quot;Anaconda prompt,&quot; then click to start. A black and white terminal window should open.</li>
+<li><p>Change to the folder where you are reading this file, using <code>CD</code>. For instance, if you downloaded this folder to <code>Downloads\2018-05-25_Python_workshop</code>, then type:</p>
+<pre><code>cd Downloads\2018-05-25_Python_workshop</code></pre></li>
+<li><p>Create an environment and install dependencies:</p>
+<pre><code>conda env create -f ./environment.yml </code></pre></li>
+<li><p>Activate the environment</p>
+<pre><code>conda activate kaz_lab_workshop</code></pre></li>
+<li><p>Start the notebook</p>
+<pre><code>jupyter notebook</code></pre></li>
+</ol>
+<p>In the future, each time you want to start the notebook:</p>
+<ol style="list-style-type: decimal">
+<li>Open a Terminal; change to this directory</li>
+<li>Run <code>conda activate kaz_lab_workshop</code></li>
+<li>Run <code>jupyter notebook</code> to start the notebook</li>
+</ol>
